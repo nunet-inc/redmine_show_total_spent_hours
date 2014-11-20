@@ -1,0 +1,1 @@
+<div id="show_total_spent_hours_view_issues_index_bottom" style="text-align: right;"><%=l(:total_label_pre) %> <strong><%= @issues.sum(&:spent_hours).round(2) %></strong> <%=l(:total_label_ext) %></div>

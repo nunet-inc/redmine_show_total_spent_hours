@@ -1,0 +1,5 @@
+# Japanese strings go here for Rails i18n
+ja:
+  total_label_pre: "作業時間計： "
+  total_label_pre_today: "本日： "
+  total_label_ext: "時間"

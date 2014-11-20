@@ -1,0 +1,11 @@
+<%
+   total = 0
+   total = TimeEntry.find(:all, :conditions=> ["spent_on = :target_date AND user_id = :user_id", {:target_date=>Date.today, :user_id => User.current.id }]).sum(&:hours)
+%>
+<script type="text/javascript">
+    $(function()
+    {
+        $("#top-menu ul").first().append("<li><%=l(:total_label_pre_today) %> <strong><%=total.round(2)%></strong> <%=l(:total_label_ext) %></li>");
+    });
+</script>
+

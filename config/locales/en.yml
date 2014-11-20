@@ -1,0 +1,5 @@
+# English strings go here for Rails i18n
+en:
+  total_label_pre: "Total: "
+  total_label_pre_today: "Today: "
+  total_label_ext: "h"
